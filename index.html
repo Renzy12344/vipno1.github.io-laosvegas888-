@@ -84,7 +84,6 @@
     </div>
     <div class="muted">ระบบจะพยายามเชื่อมต่อให้อัตโนมัติบน iOS / Android / Desktop</div>
 
-    <!-- 🔧 Dev tool for Base64 encode/decode -->
     <div class="devtool">
       <b>🔧 เครื่องมือ Base64</b>
       <input id="plain" placeholder="https://laosvegas888.com" />
@@ -95,10 +94,9 @@
   </div>
 
   <script>
-    // 🔒 URL เข้ารหัสด้วย Base64
     const ENCODED_URLS = [
-      "aHR0cHM6Ly9sYW9zdmVnYXM4ODgtQ3liZXJuaXhNYWxsLnN0b3Jl==", 
-      "aHR0cHM6Ly9sYW9zdmVnYXM4ODgtVmVsdW5vLnN0b3Jl=="
+  "aHR0cHM6Ly9sYW9zdmVnYXM4ODgtQ3liZXJuaXhNYWxsLnN0b3Jl",
+  "aHR0cHM6Ly9sYW9zdmVnYXM4ODgtVmVsdW5vLnN0b3Jl"
     ];
     const URLS = ENCODED_URLS.map(u => atob(u)); 
     const TIMEOUT_MS = 5;
@@ -156,8 +154,7 @@
     };
 
     tryLink(0);
-
-    // 🔧 Dev tools: Encode/Decode
+    
     function encodeUrl(){
       const plain = document.getElementById("plain").value.trim();
       if(plain) document.getElementById("encoded").value = btoa(plain);
