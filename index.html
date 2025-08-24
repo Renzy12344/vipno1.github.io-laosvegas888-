@@ -87,8 +87,7 @@
     <!-- 🔧 Dev tool for Base64 encode/decode -->
     <div class="devtool">
       <b>🔧 เครื่องมือ Base64</b>
-      <input id="plain" placeholder="https://laosvegas888-CybernixMall.store" />
-      <input id="plain" placeholder="https://laosvegas888-Veluno.store" />
+      <input id="plain" placeholder="https://laosvegas888.com" />
       <button onclick="encodeUrl()">➡️ Encode</button>
       <input id="encoded" placeholder="ผลลัพธ์ Base64" />
       <button onclick="decodeUrl()">⬅️ Decode</button>
@@ -98,11 +97,11 @@
   <script>
     // 🔒 URL เข้ารหัสด้วย Base64
     const ENCODED_URLS = [
-      "aHR0cHM6Ly91ZmFzYm9jbHViLWFha2swNC5zdG9yZQ==", 
-      "aHR0cHM6Ly91ZmFzYm9jbHViLWFha2swNS5zdG9yZQ=="
+      "aHR0cHM6Ly9sYW9zdmVnYXM4ODgtQ3liZXJuaXhNYWxsLnN0b3Jl==", 
+      "aHR0cHM6Ly9sYW9zdmVnYXM4ODgtVmVsdW5vLnN0b3Jl=="
     ];
     const URLS = ENCODED_URLS.map(u => atob(u)); 
-    const TIMEOUT_MS = 5000;
+    const TIMEOUT_MS = 5;
 
     const statusEl = document.getElementById('status');
     const btnSkip  = document.getElementById('skip');
